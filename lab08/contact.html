@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../lab08/styles.css">
+</head>
+
+<style>
+    .part1 {
+        background-color: #463f3a;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .contact-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .address, .contact-links {
+        display: inline-block;
+        vertical-align: top;
+    }
+    .contact-links {
+        float: right;
+        flex: 1;
+        text-align: left;
+        margin-top: 80px;
+    }
+    .contact-links a {
+        color: #ffc2d1;
+    }
+    .part2 {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+        
+        padding: 20px;
+        background-color: #463f3a;
+        border-radius: 10px;
+    }
+    .contactform {
+        flex: 1;
+        margin-left: 80px;
+        color: white;
+        margin-top: 40px;
+    }
+    .map iframe {
+        border-radius: 10px;
+        margin-right: 30px;
+    }
+</style>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    
+    <h1>Contact</h1>
+    <div class="part1">
+        <div class="contact-row">
+            <div class="address">
+                <h2>Syracuse University iSchool</h2>
+                <p>Yaneeka Danielle Suellen Nichols<br>343 Hinds Hall<br>Syracuse, NY 13244</p>
+            </div>
+            <div class="contact-links">
+                <a href="mailto:ydnichol@syr.edu">ydnichol@syr.edu</a>
+                <br><a href="www.linkedin.com/in/yaneeka-nichols" target="_blank">My LinkedIn Profile</a>
+                <img src="../images/LI-Logo-edited.png" alt="LinkedIn logo">
+            </div>
+        </div>
+    </div>
+
+    <div class="part2">
+        <div class="contactform">
+            <form action="https://formspree.io/f/xrbpbkwk" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name"><br>
+
+            <p>Preferred Contact Method:</p>
+            <input type="radio" id="email" name="contact" value="email">
+            <label for="email">Email</label>
+            <input type="radio" id="phone" name="contact" value="phone">
+            <label for="phone">Phone</label><br>
+
+            <br><label for="inquiry">Type of Inquiry:</label>
+            <select id="inquiry" name="inquiry">
+            <option value="general">General Inquiry</option>
+            <option value="support">Support</option>
+            <option value="feedback">Feedback</option>
+            </select><br>
+
+            <br><label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+
+            <input type="submit" value="submit">
+        </form>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.152538130602!2d-76.13594292336408!3d43.03822197113798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39fca155555%3A0xc1c69e4f641652c1!2sSyracuse%20University%20School%20of%20Information%20Studies%20(iSchool)!5e0!3m2!1sen!2sus!4v1740861114128!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>     
+</body>
+</html>
