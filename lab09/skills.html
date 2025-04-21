@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Skills</title>
+    <link rel="stylesheet" href="../lab08/styles.css">
+    <style>
+        h1, .intro {
+            text-align: center;
+        }
+        img {
+            filter: brightness(0) invert(1);
+            width: 20%;
+        }
+        .skills {
+            display: flex;
+            gap: 2px;
+            margin-right: 300px;
+            flex: 3;
+        }
+        .skill-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px; 
+        }
+        .extra-skills,h2 {
+            background-color: #ffc2d1;
+            color: black;
+            border-radius: 10px;
+            padding: 15px;
+            width: 300px;
+            margin-right: 60px;
+        }
+        .flexbox2 {
+            display: flex;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <h1>Technical Skills</h1>
+
+    <p class="intro">My skills have helped shape my interest in web design and human interface design, especially as they relate to creating better experiences for clients. Each tool I’ve learned supports my ability to build accessible, visually engaging, and user-centered digital content. Below are some of the technical skills</p>
+
+    <div class="flexbox2">
+        <div class="skills">
+            <div class="skill-item">
+                <br><img src="../images/skills/camera-solid.svg" alt="Photoshop Icon">
+                <br><p>Photoshop</p>
+            </div>
+            <div class="skill-item">
+                <br><img src="../images/skills/pen-nib-solid.svg" alt="Graphic Design Iocn">
+                <br><p>Graphic Design</p>
+            </div>
+            <div class="skill-item">
+                <br><img src="../images/skills/file-code-regular.svg" alt="HTML Icon">
+                <br><p>HTML</p>
+            </div>
+            <div class="skill-item">
+                <br><img src="../images/skills/css-brands.svg" alt="CSS Icon">
+                <br><p>CSS</p>
+            </div>
+            <div class="skill-item">
+                <br><img src="../images/skills/js-brands.svg" alt="JavaScript Icon">
+                <br><p>JavaScript</p>
+            </div>
+        </div>
+
+        <div>
+            <aside class="extra-skills">
+                <h2>Other Skills</h2>
+                <ul>
+                    <li>ios Device Management</li>
+                    <li>Microsoft Word</li>
+                    <li>Adobe</li>
+                    <li>Microsoft Excel</li>
+                    <li>Microsoft PowerPoint</li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+</body>
+</html>
