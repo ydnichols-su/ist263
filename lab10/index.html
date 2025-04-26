@@ -8,15 +8,29 @@
 </head>
 
 <style>
-    .myquote{
+    .myquote {
         float: right;
         font-family: 'Lucida Console', cursive;
     }
-    .clear p{margin: 0px;}
-    .clear{
+    .clear p {margin: 0px;}
+    .clear {
         display: flex;
         justify-content: space-between;
     }
+    .photo {
+        max-width: 100%;
+    }
+    @media (max-width: 768px) {
+            nav a {
+                display: block;
+                width: 100%;
+                padding: 10px 0;
+                text-align: center;
+            }
+            nav span {
+                display: none;
+            }
+        }
 </style>
 
 <body>
@@ -29,7 +43,7 @@
     </nav>
 
     <main>
-    <header><img src="../images/bio/updated-improved-pic.png" alt="bio picture"></header>
+    <header><img src="../images/bio/updated-improved-pic.png" alt="bio picture" class="photo"></header>
     <h1>Yaneeka Nichols Biography</h1>
     <p>
         Hello, my name is Yaneeka Nichols. I am a Junior undergraduate at <strong>Syracuse University</strong>, majoring in Information
