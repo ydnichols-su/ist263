@@ -30,6 +30,10 @@ header, nav a {
     color: white;
     text-align: center;
 }
+.skip{
+    color: #ffe5ec;
+    font-size: 12px;
+}
 
 h1 {
     color: #260701;
@@ -75,7 +79,7 @@ h1 {
     border-radius: 8px;
 }
 
-a {color: #ff5781;}
+a {color: #023e8a;}
 
 .two-columns {
     display: flex;

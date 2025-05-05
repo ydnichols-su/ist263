@@ -14,6 +14,22 @@
         .chanel {max-width: 25%; height: 45%; margin-left: 115px; margin-top: 20px;}
         .welcome {padding: 20px;}
         .discover {padding: 15px; text-align: center;}
+
+        @media (max-width: 768px) {
+                nav a {
+                    display: block;
+                    width: 100%;
+                    padding: 10px 0;
+                    text-align: center;
+                }
+                nav span {
+                    display: none;
+                }
+                footer {
+                    padding: 10px;
+                    text-align: center;
+                }
+            }
     </style>
 
     <script>
@@ -51,6 +67,7 @@
             <a href="legacy.html">The Legacy of Luxury Brands</a><span> |</span>
             <a href="styling.html">Styling Luxury: Making Fashion Accessible</a>
         </nav>
+        <a href="#main" class="skip">Skip to main content</a>
     </header>
     <h1>Luxury Fashion</h1>
     
