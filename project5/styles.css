@@ -1,5 +1,5 @@
 body {
-    background-color: #fff6f2;
+    background-color: #fff7f4;
     font-family: "Playfair Display", serif;
     font-style: normal;
     color: #690500;
@@ -75,7 +75,7 @@ h1 {
     border-radius: 8px;
 }
 
-a {color: #ef233c;}
+a {color: #ff5781;}
 
 .two-columns {
     display: flex;
