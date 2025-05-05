@@ -1,0 +1,95 @@
+body {
+    background-color: #ffeee6;
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+    color: #690500;
+}
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+main > .bigimage img {
+    width: 48%;
+    margin: 10px 1%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 58px;
+    font-family: "Imperial Script", cursive;
+}
+
+header, nav a {
+    background-color: #38160d;
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    color: #260701;
+    text-align: center;
+}
+.information {
+    display: flex;
+    float: right;
+    gap: 100px;
+    margin-bottom: 75px;
+}
+
+.slideshow {
+    clear: both;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    margin-left: 200px;
+}
+.slide-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}  
+.slideshow img {
+    width: 5%;
+    object-fit: cover;
+    border-radius: 8px;
+    flex: 0 0 25%;
+}
+
+.collage {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.collage img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+a {color: #ff5d8f;}
+
+.two-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 65px;
+    margin-top: 30px;
+}
+
+.collage-image {
+    width: 95%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.ending {
+    margin-top: 30px;
+}

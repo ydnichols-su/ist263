@@ -3,7 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>The Art of Luxury</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Lavishly+Yours&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <style>
+        .info01 {text-align: center;}
+        .bigimage {display: flex; gap: 30px;}
+        .info03 {text-align: center;}
+
+        .image-stack {
+            position: relative;
+            margin: 20px;
+        }
+        .base-image {
+            display: block;
+            height: auto;
+        }
+        .overlay-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 60%; /* Adjust size */
+            transform: translate(-30%, -30%); /* Fine-tune positioning */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -16,29 +44,36 @@
     <h1>The Legacy of Luxury Brands</h1>
 
     <main>
-        <section>
+        <section class="info01">
             <h2>Legacy of Luxury</h2>
-            <p>Exploring fashion houses and their timeless influence.</p>
+            <p>Luxury fashion houses have stood the test of time, evolving with the changing tides of culture and trends while maintaining their commitment to quality and innovation</p>
         </section>
-        <img src="../project/media/lv-trunk.jpg" alt="lv-trunk">
-        <img src="../project/media/guccirunway.jpg" alt="gucci-rw">
-        <section>
-            <h2>Fashion House Histories</h2>
-            <article>
-                <h3>Chanel: Reinventing Elegance</h3>
-                <p>Founded by Coco Chanel in 1910, Chanel revolutionized women’s fashion with the introduction of the little black dress, the Chanel No. 5 perfume, and the iconic quilted handbag. Chanel remains a symbol of effortless elegance.</p>
-            </article>
-            <article>
-                <h3>Louis Vuitton: The Pioneer of Luxury Travel</h3>
-                <p>What started as a luxury trunk-making business in 1854, Louis Vuitton has grown into one of the most prestigious brands in the world, known for its monogram canvas, high-quality leather goods, and trend-setting fashion collections. In 1858, Louis Vuitton introduced a revolutionary flat-top trunk, which was more stackable and durable than traditional dome-shaped trunks, transforming the way people traveled with luggage.</p>
-            </article>
-            <article>
-                <h3>Gucci: Italian Craftsmanship Meets Modernity</h3>
-                <p>Established in 1921 by Guccio Gucci, the brand is synonymous with bold patterns, luxurious leather goods, and innovative runway designs. Under creative directors like Tom Ford and Alessandro Michele, Gucci has continued to push the boundaries of contemporary fashion.</p>
-            </article>
-        </section>
-        <section>
-            <h5>Continuing Influence</h5>
+
+        <div class="bigimage">
+            <div class="image-stack">
+                <img src="../project/media/guccirunway.jpg" class="base-image" alt="background">
+                <img src="../project/media/lv-trunk.jpg" class="overlay-image" alt="overlay">
+              </div>
+        
+            <section class="info02">
+                <h2>Fashion House Histories</h2>
+                <article>
+                    <h3>Chanel: Reinventing Elegance</h3>
+                    <p>Founded by Coco Chanel in 1910, Chanel revolutionized women’s fashion with the introduction of the little black dress, the Chanel No. 5 perfume, and the iconic quilted handbag. Chanel remains a symbol of effortless elegance.</p>
+                </article>
+                <article>
+                    <h3>Louis Vuitton: The Pioneer of Luxury Travel</h3>
+                    <p>What started as a luxury trunk-making business in 1854, Louis Vuitton has grown into one of the most prestigious brands in the world, known for its monogram canvas, high-quality leather goods, and trend-setting fashion collections. In 1858, Louis Vuitton introduced a revolutionary flat-top trunk, which was more stackable and durable than traditional dome-shaped trunks, transforming the way people traveled with luggage.</p>
+                </article>
+                <article>
+                   <h3>Gucci: Italian Craftsmanship Meets Modernity</h3>
+                    <p>Established in 1921 by Guccio Gucci, the brand is synonymous with bold patterns, luxurious leather goods, and innovative runway designs. Under creative directors like Tom Ford and Alessandro Michele, Gucci has continued to push the boundaries of contemporary fashion.</p>
+                </article>
+            </section>
+        </div>
+
+        <section class="info03">
+            <h4>Continuing Influence</h4>
             <p>These brands, among others, have redefined luxury fashion and continue to influence designers, celebrities, and fashion lovers worldwide.</p>
         </section>
         <div class="collage">
@@ -51,7 +86,7 @@
 
     <footer>
         <p>&copy; 2025 yaneeka nichols</p>
-        <p>"Fashion fades, style is eternal." - Yves Saint Laurent</p>
+        <p class="quote">"Fashion fades, style is eternal." - Yves Saint Laurent</p>
     </footer>
 </body>
 </html>
