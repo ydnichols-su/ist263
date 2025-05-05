@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>The Art of Luxury</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Lavishly+Yours&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <style>
+        .chanel {max-width: 25%; height: 45%; margin-left: 115px; margin-top: 20px;}
+        .welcome {padding: 20px;}
+        .discover {padding: 15px; text-align: center;}
+
+        @media (max-width: 768px) {
+                nav a {
+                    display: block;
+                    width: 100%;
+                    padding: 10px 0;
+                    text-align: center;
+                }
+                nav span {
+                    display: none;
+                }
+                footer {
+                    padding: 10px;
+                    text-align: center;
+                }
+            }
+    </style>
+
+    <script>
+        window.addEventListener("load", () => {
+          console.log("Slideshow script is running");
+      
+          const track = document.querySelector(".slide-track");
+          const figures = document.querySelectorAll(".slide-track img");
+      
+          console.log("Number of images:", figures.length); // debugging
+      
+          if (figures.length === 0) {
+            console.error("❌ No images found inside .slide-track");
+            return;
+          }
+      
+          const totalFigures = figures.length;
+          const visible = 4;
+          let index = 0;
+      
+          setInterval(() => {
+            index++;
+            if (index > totalFigures - visible) index = 0;
+            const slideWidth = figures[0].offsetWidth;
+            console.log("Slide to index:", index, "Slide width:", slideWidth);
+            track.style.transform = `translateX(-${index * slideWidth}px)`;
+          }, 1500);
+        });
+      </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a><span> |</span>
+            <a href="legacy.html">The Legacy of Luxury Brands</a><span> |</span>
+            <a href="styling.html">Styling Luxury: Making Fashion Accessible</a>
+        </nav>
+        <a href="#main" class="skip">Skip to main content</a>
+    </header>
+    <h1>Luxury Fashion</h1>
+    
+
+    <main id="main">
+        <div class="information">
+            <img src="../project/media/makeup.jpg" alt="chanel01" class="chanel">
+            <div class="welcome">
+                <h2>Welcome to Luxury Fashion!</h2>
+                <p>Where timeless elegance meets modern sophistication. Luxury fashion represents more than just clothing—it embodies craftsmanship, exclusivity, and artistic expression.</p>
+            
+                <br><h3>Explore the Evolution</h3>
+                <p>Explore the evolution of luxury fashion through a curated collection of iconicpieces that have shaped the industry. From the classic Chanel tweed suit to the revolutionary designs of Alexander McQueen, luxury fashion continues to redfine style and innovation.</p>
+           
+                <br><h3>What You'll Find on this Site</h3>
+                <ul>
+                    <li>A glimpse into the history of luxury brands.</li>
+                    <li>Insights into the craftsmanship behind iconic pieces.</li>
+                    <li>Styling tips to incorporate luxury fashion into your wardrobe.</li>
+                </ul>
+                <br><h3 class="discover">Discrover the world of high fashion, then make it your very own!</h3>
+            </div>  
+        </div>
+        
+        <div class="slideshow">
+            <div class="slide-track">
+                <img src="../project/media/beachmodel.jpg" alt="beach-runway">
+                <img src="../project/media/lv-headband.jpg" alt="lv-headband">
+                <img src="../project/media/dior.jpg" alt="dior-ring">
+                <img src="../project/media/guccibuilding.jpg" alt="gucci-logo">
+                <img src="../project/media/guccisneaker.jpg" alt="gucci-sneaker">
+                <img src="../project/media/iconicchanel.jpg" alt="chanel-outfit">
+                <img src="../project/media/lux-suitcase.jpg" alt="chanel-suitcase">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 yaneeka nichols</p>
+        <p class="quote">"Fashion fades, style is eternal." - Yves Saint Laurent</p>
+    </footer>
+</body>
+</html>
